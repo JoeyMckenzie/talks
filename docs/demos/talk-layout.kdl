@@ -1,0 +1,19 @@
+layout {
+    pane split_direction="vertical" {
+        pane size="80%" {
+            command "presenterm"
+            args "terminal-tools-big-gui-doesnt-want-you-to-know-about.md"
+            focus true
+        }
+        pane split_direction="horizontal" {
+            pane size="70%" {
+                name "demo"
+            }
+            pane size="30%" {
+                command "timer"
+                args "20m"
+                name "timer"
+            }
+        }
+    }
+}
