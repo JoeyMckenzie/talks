@@ -10,9 +10,7 @@ layout {
                 name "demo"
             }
             pane size="30%" {
-                command "timer"
-                args "20m"
-                name "timer"
+                name "scratch"
             }
         }
     }

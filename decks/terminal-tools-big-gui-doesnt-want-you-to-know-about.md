@@ -14,6 +14,10 @@ theme:
 
 # Terminal Tools That Big GUI Doesn't Want You to Know About
 
+![image:width:50%](../docs/images/terminal-hero.png)
+
+<!-- speaker_note: 30s. Ask for show of hands. Energy up. -->
+
 <!-- pause -->
 
 **The terminal isn't outdated. The default tools are.**
@@ -51,7 +55,72 @@ bat docs/demos/legacy-config.php
 
 <!-- end_slide -->
 
-# OK so we can read files better. But first we have to find them
+# OK so we can read files better. But can we even see what's in this directory?
+
+<!-- end_slide -->
+
+<!-- new_lines: 3 -->
+
+# eza
+
+### A modern `ls` replacement with icons, colors, git status, and tree view
+
+<!-- speaker_note: 1 min. Let the side-by-side speak for itself. Mention you aliased ls to eza. -->
+
+<!-- pause -->
+
+```bash +exec
+ls -la docs/demos
+```
+
+<!-- pause -->
+
+```bash +exec
+eza -la --icons --git docs/demos
+```
+
+<!-- end_slide -->
+
+## But wait, there's a tree
+
+```bash +exec
+eza --tree --level=2 --icons --git docs/
+```
+
+<!-- pause -->
+
+_I aliased `ls` to `eza` six months ago. Haven't looked back._
+
+<!-- end_slide -->
+
+# We can read and list files. But what about navigating the whole project?
+
+<!-- end_slide -->
+
+<!-- new_lines: 3 -->
+
+# yazi
+
+### A terminal file manager with preview, bulk ops, and a plugin system
+
+<!-- speaker_note: 1.5 min. Switch to demo pane, launch yazi, navigate around. Show preview pane and bulk rename. -->
+
+<!-- pause -->
+
+**Demo time:** _Launch `yazi` in the project root._
+
+- Arrow keys to navigate, Enter to open
+- Preview pane: syntax highlighted code, images, even PDFs
+- Bulk rename, copy, move — Finder but faster
+- Tab for new tabs, `~` for hidden files
+
+<!-- pause -->
+
+_The moment you stop `cd`-ing and `ls`-ing to find that one file..._
+
+<!-- end_slide -->
+
+# We can read, list, and navigate. But sometimes we need to _search_
 
 <!-- end_slide -->
 
@@ -123,6 +192,8 @@ git diff --no-index docs/demos/old-api.php docs/demos/new-api.php | delta --side
 
 ### A full git workflow from a single TUI — no git commands required
 
+<!-- speaker_note: 2 min. Longest demo. Stage a file, show diff, interactive rebase. -->
+
 <!-- pause -->
 
 **Demo time:** staging, diffs, interactive rebase — without typing a single git command.
@@ -183,7 +254,7 @@ _Demo: typo a command, then just type `fuck`._
 
 <!-- pause -->
 
-That timer pane? This presentation layout? All zellij.
+This presentation layout? The split panes? All zellij.
 
 ```bash +exec
 cat docs/demos/talk-layout.kdl
@@ -295,6 +366,8 @@ _Pager mode: `glow -p README.md`_
 
 ### Full task management from the terminal — and from Claude Code via a custom MCP
 
+<!-- speaker_note: 2.5 min. This is the closer. Switch to Claude Code pane. -->
+
 <!-- end_slide -->
 
 ## The Problem
@@ -334,29 +407,33 @@ Switch to Claude Code (already in this zellij layout — callback!)
 
 # The terminal isn't dying. It's having a renaissance
 
+![image:width:60%](../docs/images/terminal-renaissance.png)
+
+<!-- speaker_note: Point to reference table. Link to repo. -->
+
 <!-- end_slide -->
 
 # Tools Reference
 
-| Tool        | Install                           |
-| ----------- | --------------------------------- |
-| bat         | `brew install bat`                |
-| fd          | `brew install fd`                 |
-| ripgrep     | `brew install ripgrep`            |
-| fzf         | `brew install fzf`                |
-| delta       | `brew install git-delta`          |
-| lazygit     | `brew install lazygit`            |
-| atuin       | `brew install atuin`              |
-| zellij      | `brew install zellij`             |
-| thefuck     | `brew install thefuck`            |
-| btop        | `brew install btop`               |
-| harlequin   | `brew install harlequin`          |
-| hurl        | `brew install hurl`               |
-| posting     | `brew install posting`            |
-| glow        | `brew install glow`               |
-| taskwarrior | `brew install task`               |
-| presenterm  | `brew install presenterm`         |
-| timer       | `brew install caarlos0/tap/timer` |
+| Tool        | Install                   |
+| ----------- | ------------------------- |
+| bat         | `brew install bat`        |
+| eza         | `brew install eza`        |
+| yazi        | `brew install yazi`       |
+| fd          | `brew install fd`         |
+| ripgrep     | `brew install ripgrep`    |
+| fzf         | `brew install fzf`        |
+| delta       | `brew install git-delta`  |
+| lazygit     | `brew install lazygit`    |
+| atuin       | `brew install atuin`      |
+| zellij      | `brew install zellij`     |
+| thefuck     | `brew install thefuck`    |
+| btop        | `brew install btop`       |
+| harlequin   | `pipx install harlequin`  |
+| hurl        | `brew install hurl`       |
+| glow        | `brew install glow`       |
+| taskwarrior | `brew install task`       |
+| presenterm  | `brew install presenterm` |
 
 <!-- end_slide -->
 
