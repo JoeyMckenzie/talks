@@ -16,10 +16,6 @@ theme:
 
 <!-- pause -->
 
-_Joey McKenzie_
-
-<!-- pause -->
-
 **The terminal isn't outdated. The default tools are.**
 
 <!-- pause -->
@@ -31,7 +27,7 @@ Quick show of hands...
 
 <!-- end_slide -->
 
-# Let's start with the simplest thing you do every day — read a file.
+# Let's start with the simplest thing you do every day — read a file
 
 <!-- end_slide -->
 
@@ -39,7 +35,7 @@ Quick show of hands...
 
 # bat
 
-### A better `cat` with syntax highlighting, line numbers, and git integration.
+### A better `cat` with syntax highlighting, line numbers, and git integration
 
 <!-- pause -->
 
@@ -55,7 +51,7 @@ bat docs/demos/legacy-config.php
 
 <!-- end_slide -->
 
-# OK so we can read files better. But first we have to find them.
+# OK so we can read files better. But first we have to find them
 
 <!-- end_slide -->
 
@@ -63,14 +59,14 @@ bat docs/demos/legacy-config.php
 
 # fd + ripgrep + fzf
 
-### Find files. Search content. Filter anything.
+### Find files. Search content. Filter anything
 
 <!-- end_slide -->
 
 ## "I need to find all env files"
 
 ```bash +exec
-fd .env docs/demos
+fd -H .env docs/demos
 ```
 
 <!-- pause -->
@@ -78,7 +74,7 @@ fd .env docs/demos
 ## "Which one has my Stripe key?"
 
 ```bash +exec
-rg STRIPE_KEY docs/demos
+rg --hidden STRIPE_KEY docs/demos
 ```
 
 <!-- end_slide -->
@@ -93,13 +89,13 @@ _Pipe it to fzf for interactive filtering: `rg "TODO" | fzf`_
 
 <!-- pause -->
 
-## One more thing...
+## One more thing
 
 **Hit CTRL+R** — fzf already replaced your shell history search.
 
 <!-- end_slide -->
 
-# We can find and read code. What about what's *changed*?
+# We can find and read code. What about what's _changed_?
 
 <!-- end_slide -->
 
@@ -107,17 +103,17 @@ _Pipe it to fzf for interactive filtering: `rg "TODO" | fzf`_
 
 # delta
 
-### A better git diff — syntax highlighted, readable, side-by-side.
+### A better git diff — syntax highlighted, readable, side-by-side
 
 <!-- pause -->
 
 ```bash +exec
-cd docs/demos && git diff --no-index old-api.py new-api.py | delta --side-by-side
+git diff --no-index docs/demos/old-api.php docs/demos/new-api.php | delta --side-by-side
 ```
 
 <!-- end_slide -->
 
-# Delta fixed the diff. Lazygit fixes the whole workflow.
+# Delta fixed the diff. Lazygit fixes the whole workflow
 
 <!-- end_slide -->
 
@@ -125,7 +121,7 @@ cd docs/demos && git diff --no-index old-api.py new-api.py | delta --side-by-sid
 
 # lazygit
 
-### A full git workflow from a single TUI — no git commands required.
+### A full git workflow from a single TUI — no git commands required
 
 <!-- pause -->
 
@@ -143,7 +139,7 @@ _Launch: `lazygit`_
 
 # atuin
 
-### Shell history that's actually searchable — with timestamps, exit codes, and cross-machine sync.
+### Shell history that's actually searchable — with timestamps, exit codes, and cross-machine sync
 
 <!-- pause -->
 
@@ -155,7 +151,23 @@ _Launch: `lazygit`_
 
 <!-- end_slide -->
 
-# I have my history, my git, my search — but I'm drowning in terminal tabs.
+# Shoot, I mistyped that command
+
+<!-- end_slide -->
+
+<!-- new_lines: 3 -->
+
+# thefuck
+
+### Auto-corrects your previous command when you mess up
+
+<!-- pause -->
+
+_Demo: typo a command, then just type `fuck`._
+
+<!-- end_slide -->
+
+# I have my history, my git, my search — but I'm drowning in terminal tabs
 
 <!-- end_slide -->
 
@@ -163,11 +175,11 @@ _Launch: `lazygit`_
 
 # zellij
 
-### A terminal multiplexer that doesn't require a PhD to configure.
+### A terminal multiplexer that doesn't require a PhD to configure
 
 <!-- pause -->
 
-## You've been looking at zellij this whole time.
+## You've been looking at zellij this whole time
 
 <!-- pause -->
 
@@ -179,7 +191,29 @@ cat docs/demos/talk-layout.kdl
 
 <!-- end_slide -->
 
-# Now that we have our workspace, let's talk about replacing entire applications.
+# Now that we have our workspace, let's talk about replacing entire applications
+
+<!-- end_slide -->
+
+<!-- new_lines: 3 -->
+
+# btop
+
+### System monitoring that makes Activity Monitor look like a spreadsheet
+
+<!-- pause -->
+
+_The progression:_
+
+`top` → `htop` → **`btop`**
+
+<!-- pause -->
+
+**Demo:** _Launch `btop` — CPU, memory, network, disks, process tree. All in one view._
+
+<!-- end_slide -->
+
+# If btop can replace Activity Monitor, what else can we replace?
 
 <!-- end_slide -->
 
@@ -187,7 +221,7 @@ cat docs/demos/talk-layout.kdl
 
 # harlequin
 
-### A TUI database client — query your DB without leaving the terminal.
+### A TUI database client — query your DB without leaving the terminal
 
 <!-- pause -->
 
@@ -209,7 +243,7 @@ The reaction moment: "wait, this is actually usable"
 
 # hurl
 
-### HTTP requests as plain text files — committable, chainable, scriptable.
+### HTTP requests as plain text files — committable, chainable, scriptable
 
 <!-- pause -->
 
@@ -229,7 +263,7 @@ hurl --very-verbose docs/demos/api-flow.hurl
 
 <!-- end_slide -->
 
-# We replaced Postman. Let's replace the browser for one more thing — reading docs.
+# We replaced Postman. Let's replace the browser for one more thing — reading docs
 
 <!-- end_slide -->
 
@@ -237,7 +271,7 @@ hurl --very-verbose docs/demos/api-flow.hurl
 
 # glow
 
-### Render Markdown beautifully in the terminal.
+### Render Markdown beautifully in the terminal
 
 <!-- pause -->
 
@@ -251,7 +285,7 @@ _Pager mode: `glow -p README.md`_
 
 <!-- end_slide -->
 
-# Everything so far is a better version of something that already exists. This last one is something new.
+# Everything so far is a better version of something that already exists. This last one is something new
 
 <!-- end_slide -->
 
@@ -259,7 +293,7 @@ _Pager mode: `glow -p README.md`_
 
 # taskwarrior + MCP
 
-### Full task management from the terminal — and from Claude Code via a custom MCP.
+### Full task management from the terminal — and from Claude Code via a custom MCP
 
 <!-- end_slide -->
 
@@ -298,32 +332,34 @@ Switch to Claude Code (already in this zellij layout — callback!)
 
 <!-- new_lines: 3 -->
 
-# The terminal isn't dying. It's having a renaissance.
+# The terminal isn't dying. It's having a renaissance
 
 <!-- end_slide -->
 
 # Tools Reference
 
-| Tool | Install |
-|---|---|
-| bat | `brew install bat` |
-| fd | `brew install fd` |
-| ripgrep | `brew install ripgrep` |
-| fzf | `brew install fzf` |
-| delta | `brew install git-delta` |
-| lazygit | `brew install lazygit` |
-| atuin | `brew install atuin` |
-| zellij | `brew install zellij` |
-| harlequin | `brew install harlequin` |
-| hurl | `brew install hurl` |
-| posting | `brew install posting` |
-| glow | `brew install glow` |
-| taskwarrior | `brew install task` |
-| presenterm | `brew install presenterm` |
-| timer | `brew install caarlos0/tap/timer` |
+| Tool        | Install                           |
+| ----------- | --------------------------------- |
+| bat         | `brew install bat`                |
+| fd          | `brew install fd`                 |
+| ripgrep     | `brew install ripgrep`            |
+| fzf         | `brew install fzf`                |
+| delta       | `brew install git-delta`          |
+| lazygit     | `brew install lazygit`            |
+| atuin       | `brew install atuin`              |
+| zellij      | `brew install zellij`             |
+| thefuck     | `brew install thefuck`            |
+| btop        | `brew install btop`               |
+| harlequin   | `brew install harlequin`          |
+| hurl        | `brew install hurl`               |
+| posting     | `brew install posting`            |
+| glow        | `brew install glow`               |
+| taskwarrior | `brew install task`               |
+| presenterm  | `brew install presenterm`         |
+| timer       | `brew install caarlos0/tap/timer` |
 
 <!-- end_slide -->
 
-# Thanks!
+# Thanks
 
 Slides and demos: **github.com/joeymckenzie/talks**
