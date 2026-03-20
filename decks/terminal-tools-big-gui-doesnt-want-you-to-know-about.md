@@ -39,7 +39,7 @@ Quick show of hands...
 
 # bat
 
-### A better `cat` with syntax highlighting, line numbers, and git integration
+## A better `cat` with syntax highlighting, line numbers, and git integration
 
 <!-- pause -->
 
@@ -63,7 +63,7 @@ bat docs/demos/legacy-config.php
 
 # eza
 
-### A modern `ls` replacement with icons, colors, git status, and tree view
+## A modern `ls` replacement with icons, colors, git status, and tree view
 
 <!-- speaker_note: 1 min. Let the side-by-side speak for itself. Mention you aliased ls to eza. -->
 
@@ -101,7 +101,7 @@ _I aliased `ls` to `eza` six months ago. Haven't looked back._
 
 # yazi
 
-### A terminal file manager with preview, bulk ops, and a plugin system
+## A terminal file manager with preview, bulk ops, and a plugin system
 
 <!-- speaker_note: 1.5 min. Switch to demo pane, launch yazi, navigate around. Show preview pane and bulk rename. -->
 
@@ -128,7 +128,7 @@ _The moment you stop `cd`-ing and `ls`-ing to find that one file..._
 
 # fd + ripgrep + fzf
 
-### Find files. Search content. Filter anything
+## Find files. Search content. Filter anything
 
 <!-- end_slide -->
 
@@ -172,7 +172,7 @@ _Pipe it to fzf for interactive filtering: `rg "TODO" | fzf`_
 
 # delta
 
-### A better git diff — syntax highlighted, readable, side-by-side
+## A better git diff — syntax highlighted, readable, side-by-side
 
 <!-- pause -->
 
@@ -190,7 +190,7 @@ git diff --no-index docs/demos/old-api.php docs/demos/new-api.php | delta --side
 
 # lazygit
 
-### A full git workflow from a single TUI — no git commands required
+## A full git workflow from a single TUI — no git commands required
 
 <!-- speaker_note: 2 min. Longest demo. Stage a file, show diff, interactive rebase. -->
 
@@ -210,7 +210,7 @@ _Launch: `lazygit`_
 
 # atuin
 
-### Shell history that's actually searchable — with timestamps, exit codes, and cross-machine sync
+## Shell history that's actually searchable — with timestamps, exit codes, and cross-machine sync
 
 <!-- pause -->
 
@@ -230,7 +230,7 @@ _Launch: `lazygit`_
 
 # thefuck
 
-### Auto-corrects your previous command when you mess up
+## Auto-corrects your previous command when you mess up
 
 <!-- pause -->
 
@@ -246,7 +246,7 @@ _Demo: typo a command, then just type `fuck`._
 
 # zellij
 
-### A terminal multiplexer that doesn't require a PhD to configure
+## A terminal multiplexer that doesn't require a PhD to configure
 
 <!-- pause -->
 
@@ -270,7 +270,7 @@ cat docs/demos/talk-layout.kdl
 
 # btop
 
-### System monitoring that makes Activity Monitor look like a spreadsheet
+## System monitoring that makes Activity Monitor look like a spreadsheet
 
 <!-- pause -->
 
@@ -292,7 +292,7 @@ _The progression:_
 
 # harlequin
 
-### A TUI database client — query your DB without leaving the terminal
+## A TUI database client — query your DB without leaving the terminal
 
 <!-- pause -->
 
@@ -314,7 +314,7 @@ The reaction moment: "wait, this is actually usable"
 
 # hurl
 
-### HTTP requests as plain text files — committable, chainable, scriptable
+## HTTP requests as plain text files — committable, chainable, scriptable
 
 <!-- pause -->
 
@@ -342,7 +342,7 @@ hurl --very-verbose docs/demos/api-flow.hurl
 
 # glow
 
-### Render Markdown beautifully in the terminal
+## Render Markdown beautifully in the terminal
 
 <!-- pause -->
 
@@ -364,7 +364,7 @@ _Pager mode: `glow -p README.md`_
 
 # taskwarrior + MCP
 
-### Full task management from the terminal — and from Claude Code via a custom MCP
+## Full task management from the terminal — and from Claude Code via a custom MCP
 
 <!-- speaker_note: 2.5 min. This is the closer. Switch to Claude Code pane. -->
 
